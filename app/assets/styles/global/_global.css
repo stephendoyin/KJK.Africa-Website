@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Sofia Pro";
+    /* font-family: "Montserrat", sans-serif; */
+}
+
+@media only screen and (min-width: 920px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.title{
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 32px 0 20px 0;
+    display: inline-block;
+
+    &--center{
+        margin-left: 50%;
+        transform: translate(-50%, 0px);
+        white-space: nowrap;
+    }
+
+    &__line{
+        width: 28px;
+        margin-top: 3px;
+        display: block;
+        border-top: 3px solid #F98406;
+    }
+
+    &--white{
+        color: white;
+    }
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Light'), local('Sofia-Pro-Light'),
+        url('SofiaProLight.woff2') format('woff2'),
+        url('SofiaProLight.woff') format('woff'),
+        url('SofiaProLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Extra Light'), local('Sofia-Pro-Extra-Light'),
+        url('../../assets/fonts/SofiaProExtraLight.woff2') format('woff2'),
+        url('../../assets/fonts/SofiaProExtraLight.woff') format('woff'),
+        url('../../assets/fonts/SofiaProExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+        url('../../assets/fonts/SofiaProRegular.woff2') format('woff2'),
+        url('../../assets/fonts/SofiaProRegular.woff') format('woff'),
+        url('../../assets/fonts/SofiaProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Medium'), local('Sofia-Pro-Medium'),
+        url('../../assets/fonts/SofiaProMedium.woff2') format('woff2'),
+        url('../../assets/fonts/SofiaProMedium.woff') format('woff'),
+        url('../../assets/fonts/SofiaProMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+    color: #333;
+    font-size: 2.2rem;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #FB5A1E;
+    border-radius: 15px;
+    margin-top: 9px;
+}
+
+.content{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 32px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+
+    &--thin{
+        font-weight: 200;
+        padding-bottom: 20px;
+
+        &--strong{
+            font-weight: 500;
+
+            &--stronger{
+                font-weight: bold;
+            }
+
+            &--colored{
+                color: #FB5A1E;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 920px){
+    .content{
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (min-width: 771px){
+    .content{
+        padding-right: 30px;
+    }
+}

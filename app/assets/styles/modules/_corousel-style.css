@@ -1,0 +1,18 @@
+.carouzel {
+    &__container{
+        /* padding: 0 2%; */
+    }
+
+    .ir {
+        height: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+}
+
+.title__news{
+    margin-left: 3%;
+}

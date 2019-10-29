@@ -1,0 +1,133 @@
+
+.header__design {
+    animation: fill .5s ease forwards 2s;
+
+        & path:nth-child(1) {
+            stroke-dasharray: 261.216064453125px;
+            stroke-dashoffset: 261.216064453125px;
+            animation: line-animation 2s ease forwards;
+        }
+
+        & path:nth-child(2) {
+            stroke-dasharray: 168.29824829101562px;
+            stroke-dashoffset: 168.29824829101562px;
+            animation: line-animation 2s ease forwards .3s;
+        }
+
+        & path:nth-child(3) {
+            stroke-dasharray: 211.38389587402344px;
+            stroke-dashoffset: 211.38389587402344px;
+            animation: line-animation 2s ease forwards .6s;
+        }
+
+        & path:nth-child(4) {
+            stroke-dasharray: 171.42820739746094px;
+            stroke-dashoffset: 171.42820739746094px;
+            animation: line-animation 2s ease forwards .9s;
+        }
+
+        & path:nth-child(5) {
+            stroke-dasharray: 144.36695861816406px;
+            stroke-dashoffset: 144.36695861816406px;
+            animation: line-animation 2s ease forwards .12s;
+        }
+
+        & path:nth-child(6) {
+            stroke-dasharray: 236.79800415039062;
+            stroke-dashoffset: 236.79800415039062;
+            animation: line-animation 2s ease forwards .15s;
+        }
+        
+}
+
+/* Letter 0 is 261.1040344238281
+App.js:39 Letter 1 is 168.29840087890625
+App.js:39 Letter 2 is 209.52560424804688
+App.js:39 Letter 3 is 168.29849243164062
+App.js:39 Letter 4 is 142.4134979248047
+App.js:39 Letter 5 is 167.8123321533203
+App.js:39 Letter 6 is 281.6448669433594
+App.js:39 Letter 7 is 338.60479736328125
+App.js:39 Letter 8 is 168.29653930664062
+App.js:39 Letter 9 is 236.79766845703125
+App.js:39 Letter 10 is 147.7610626220703 */
+
+.header__development{
+    animation: fill .5s ease forwards 2s;
+    
+    & path:nth-child(1) {
+        stroke-dasharray: 261.1040344238281px;
+        stroke-dashoffset: 261.1040344238281px;
+        animation: line-animation 2s ease forwards;
+    }
+
+    & path:nth-child(2) {
+        stroke-dasharray: 168.29840087890625px;
+        stroke-dashoffset: 168.29840087890625px;
+        animation: line-animation 2s ease forwards .3s;
+    }
+
+    & path:nth-child(3) {
+        stroke-dasharray: 211.38389587402344px;
+        stroke-dashoffset: 211.38389587402344px;
+        animation: line-animation 2s ease forwards .6s;
+    }
+
+    & path:nth-child(4) {
+        stroke-dasharray: 171.42820739746094px;
+        stroke-dashoffset: 171.42820739746094px;
+        animation: line-animation 2s ease forwards .9s;
+    }
+
+    & path:nth-child(5) {
+        stroke-dasharray: 144.36695861816406px;
+        stroke-dashoffset: 144.36695861816406px;
+        animation: line-animation 2s ease forwards .12s;
+    }
+
+    & path:nth-child(6) {
+        stroke-dasharray: 170.03163146972656;
+        stroke-dashoffset: 170.03163146972656;
+        animation: line-animation 2s ease forwards .15s;
+    }
+    & path:nth-child(7) {
+        stroke-dasharray: 276.708740234375px;
+        stroke-dashoffset: 276.708740234375px;
+        animation: line-animation 2s ease forwards .15s;
+    }
+    & path:nth-child(8) {
+        stroke-dasharray: 328.23675537109375px;
+        stroke-dashoffset: 328.23675537109375px;
+        animation: line-animation 2s ease forwards .15s;
+    }
+    & path:nth-child(9) {
+        stroke-dasharray: 171.42843627929688px;
+        stroke-dashoffset: 171.42843627929688px;
+        animation: line-animation 2s ease forwards .15s;
+    }
+    & path:nth-child(10) {
+        stroke-dasharray: 235.32296752929688px;
+        stroke-dashoffset: 235.32296752929688px;
+        animation: line-animation 2s ease forwards .15s;
+    }
+    & path:nth-child(11) {
+        stroke-dasharray: 147.70108032226562px;
+        stroke-dashoffset: 147.70108032226562px;
+        animation: line-animation 2s ease forwards .15s;
+    }
+}
+
+@keyframes line-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}

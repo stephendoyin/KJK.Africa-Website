@@ -1,0 +1,110 @@
+.header{
+
+    width: 100%;
+    position: relative;
+
+    &__container{
+        height: 100vh;
+        width: 100%;
+        background:  linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/hero_img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    &__break {
+        display: none;
+    }
+
+    &__title{
+        font-size: 2rem;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        line-height: normal;
+
+        &--em{
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 900;
+        }
+    }
+
+    &__text{
+        font-size: 1.4rem;
+        color: #ffffff;
+        font-family: 'Sofia Pro', serif;
+        font-weight: 200;
+        line-height: 28px;
+
+       
+
+        &-container{
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+        }
+    }
+    
+    &__map{
+        position: absolute;
+        right: 0%;
+        height: 103%;
+        top: 8%;
+        z-index: 60;
+        display: none;
+    }
+
+    &__design{
+        width: 6.7rem;
+        vertical-align: bottom;
+        transform: translateY(-1px);
+    }
+    &__development{
+        width: 12.8rem;
+        vertical-align: bottom;
+        transform: translateY(-2px);
+    }
+
+   
+
+}
+
+@media only screen and (min-width: 600px){
+    .header__design{
+        width: 9.8rem;
+        transform: translateY(-1.4px);
+    }
+    .header__development{
+        width: 19rem;
+        transform: translateY(-3px);
+    }
+}
+
+@media only screen and (min-width: 770px){
+    .header__map{
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .header__title{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 920px){
+    .header__text{
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width: 365px){
+    .header__break{
+        display: block;
+    }
+}
