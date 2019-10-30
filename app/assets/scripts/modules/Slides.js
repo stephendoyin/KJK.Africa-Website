@@ -35,8 +35,8 @@ class Slides {
                 0: {
                     items: 1
                 },
-                400: {
-                    items: 1
+                320: {
+                    items: 2
                 },
                 500: {
                     items: 2

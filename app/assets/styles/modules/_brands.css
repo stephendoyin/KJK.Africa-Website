@@ -4,6 +4,7 @@
 
     &__logo{
         width: 20.5%;
+        position: relative;
     }
 
     &__logo-container{

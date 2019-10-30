@@ -2,31 +2,32 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 40px 5% 50px 5%;
+    padding: 0px 5% 50px 5%;
     background: linear-gradient(0deg, rgba(255, 247, 244, 0.95), rgba(255, 247, 244, 0.95)), url(../../assets/images/bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    flex-direction: column;
 
     &__title{
         margin-bottom: 20px;
     }
     
     &__container{
-        width: 60%;
+        width: 100%;
         position: relative;
         padding-top: 20px;
 
         &--custom{
             padding: 120px 0px 0px 0;
-            width: 40%;
+            width: inherit;
         }
     }
 
     &__img-one{
         float: right;
         width: 80%;
-        right: 10%;
+        right: 0%;
         position: relative;
         z-index: 5;
         bottom: 0;
@@ -50,10 +51,10 @@
 
 @media only screen and (min-width: 770px){
     .about__img-one{
-        width: 65%;
+        width: 55%;
     }
     .about__img-three{
-        width: 55%;
+        width: 45%;
     }
 }
 
@@ -65,16 +66,32 @@
         width: 50%;
     }
 }
-@media only screen and (min-width: 642px){
+/* @media only screen and (min-width: 642px){
     .about__container{
         width: 55%
     }
     .about__container--custom{
         width: 45%;
     }
-}
+} */
 @media only screen and (min-width: 662px){
     .about__container--custom{
         padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 540px){
+    .about{
+        flex-direction: row;
+        padding-top: 40px;
+    }
+    .about__container{
+        width: 55%;
+    }
+    .about__container--custom{
+        width: 45%;
+    }
+    .about__img-one{
+        right: 10%;
     }
 }
