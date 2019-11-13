@@ -8,6 +8,11 @@
     align-items: center;
     justify-content: space-between;
 
+    
+    &--upper-space{
+        margin-top: 30px;
+    }
+
     &--primary{
         background: #FB5A1E;
         border-radius: 200px;

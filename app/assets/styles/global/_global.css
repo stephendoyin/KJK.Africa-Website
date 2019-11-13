@@ -106,7 +106,7 @@ html {
     font-weight: 300;
     line-height: 32px;
     padding-right: 5%;
-    padding-bottom: 50px;
+    padding-bottom: 16px;
 
     &--thin{
         font-weight: 200;
@@ -128,7 +128,7 @@ html {
 
 @media only screen and (min-width: 920px){
     .content{
-        padding-bottom: 70px;
+        /* padding-bottom: 70px; */
     }
 }
 @media only screen and (min-width: 771px){
@@ -139,6 +139,6 @@ html {
 
 @media only screen and (min-width: 520px){
     .title{
-        font-size: 2.7rem;
+        font-size: 2.4rem;
     }
 }

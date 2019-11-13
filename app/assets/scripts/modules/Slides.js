@@ -54,7 +54,6 @@ class Slides {
             items: 8,
             loop: true,
             autoplay: true,
-            slideTransition: 'linear',
             autoplayTimeout: 4000,
             autoplaySpeed: 4000,
             autoplayHoverPause: false,
