@@ -4,7 +4,7 @@
 
 
     &__logo{
-        width: 20.5%;
+        width: 50%;
         position: relative;
     }
 
@@ -20,7 +20,7 @@
         display: flex; 
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 110px;
     }
 
     &__logo:nth-child(4n+1) {
@@ -43,4 +43,20 @@
         filter: grayscale(0%) brightness(100%) opacity(100%);
     }
 
+}
+
+
+@media only screen and (min-width: 540px){
+    .brands__logo {
+        width: 33%;
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .brands__logo {
+        width: 25%;
+        position: relative;
+        height: 150px;
+    }
 }

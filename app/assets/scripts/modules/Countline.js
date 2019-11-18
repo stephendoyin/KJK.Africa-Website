@@ -20,12 +20,6 @@ class CountLine {
         })
     }
 
-
-
-
-
-
-
 }
 
 

@@ -1,9 +1,27 @@
 .nav-bar{
-    height: 90px;
+    height: 70px;
     background: transparent;
     width: 100%;
     z-index: 99;
-    position: relative;
+    transition: all .3s ease-in-out;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &__link{
+        display: none;
+    }
+
+    &--up{
+        top: -70px;
+    }
+
+    &--down{
+        top: 0px;
+        background: rgba(34, 33, 33, 0.9);
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    }
 
     &__container{
         height: 100%;
@@ -17,7 +35,7 @@
     }
 
     &__logo{
-        height: 54px;
+        width: 60%;
     }
 
     &__menu-icon{
@@ -96,5 +114,27 @@
 @media only screen and (min-width: 600px){
     .nav-bar__menu-icon{
         width: 40px;
+    }
+}
+
+@media only screen and (min-width: 740px){
+    .nav-bar__link:link, .nav-bar__link:visited{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1rem;
+        margin: 0 30px;
+        text-decoration: none;
+        font-weight: 500;
+        white-space: nowrap;
+        vertical-align: center;
+    }
+
+    .nav-bar__link--bg {
+        background: linear-gradient(180deg, #FB5A1E 12.9%, #FA8407 100%);
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+        border-radius: 45px;
+        padding: 9px 22px;
     }
 }
