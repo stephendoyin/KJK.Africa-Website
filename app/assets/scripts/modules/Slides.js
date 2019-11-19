@@ -55,7 +55,7 @@ class Slides {
             loop: true,
             autoplay: true,
             autoplayTimeout: 5000,
-            autoplaySpeed: 1000,
+            autoplaySpeed: 300,
             autoplayHoverPause: false,
         });
     }

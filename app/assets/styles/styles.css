@@ -6,7 +6,6 @@
 @import 'modules/_header.css';
 @import 'modules/_nav-bar.css';
 @import 'modules/_btn.css';
-@import 'modules/_testimonials.css';
 @import 'modules/_footer.css';
 @import 'modules/_about.css';
 @import 'modules/_section.css';
@@ -15,4 +14,4 @@
 @import 'modules/_corousel-style.css';
 @import 'modules/_text-animation.css';
 @import 'modules/_mobile-nav.css';
-
+@import 'modules/_testimonials.css';

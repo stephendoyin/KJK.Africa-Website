@@ -2,9 +2,11 @@
     width: 100%;
     display: flex;
     background: rgba(251, 90, 30, 0.05);
+    position: relative;
     
     &__section{
         position: relative;
+        width: 100%;
 
         &:hover .testimonials__trigger--left{
             left: 3%;
@@ -81,7 +83,13 @@
             padding-left: 7%;
             font-size: 1.1rem;
             line-height: 23px;
-            font-weight: 200;
+            font-weight: 400;
+            font-family: 'Quicksand', sans-serif;
+            color: #333;
+
+            &--strong{
+                font-weight: 700
+            }
 
             &--small{
                 font-size: 1rem;
@@ -103,7 +111,7 @@
     }
 
     .quote{
-        width: 7%;
+        width: 9%;
     }
 
     &__container-first{
@@ -139,6 +147,7 @@
         border-radius: 28px;
         transform: translateX(50%);
     }
+
 }
 
 @media only screen and (min-width: 700px){

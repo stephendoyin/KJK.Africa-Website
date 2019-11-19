@@ -120,15 +120,17 @@
         color: #fff;
     }
 
-    &__link:link, &__link:visited{
+    &__link:link, 
+    &__link:visited, 
+    &__menu-bar:link, 
+    &__menu-bar:visited{
         font-weight: 700;
         display: inline-block;
         position: relative;
         text-decoration: none;
         color: #fff;
-        font-size: 2.2rem;
-        margin-bottom: 2.5%;
-        
+        font-size: 2.3rem;
+        margin-bottom: 7.5%;
     }
 
     &__link.active:link, &__link.active:visited{
@@ -200,6 +202,11 @@
 
     .mobile-nav__list{
         width: 40%;
+    }
+
+    .mobile-nav__menu-bar:link, 
+    .mobile-nav__menu-bar:visited{
+        display: none;
     }
 
     .mobile-nav__link__arrow-img{

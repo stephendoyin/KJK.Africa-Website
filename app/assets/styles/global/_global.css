@@ -26,10 +26,14 @@ body.fixed{
 }
 
 .title{
-    font-size: 1.7rem;
-    font-weight: 600;
     padding: 32px 0 20px 0;
     display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 900;
+    color: #333;
+    font-size: 1.8rem;
+    line-height: 1.5;
 
     &--center{
         margin-left: 50%;
@@ -111,6 +115,8 @@ body.fixed{
     font-weight: 900;
     color: #333;
     font-size: 1.8rem;
+    line-height: 1.5;
+
 }
 
 .title::after{
@@ -162,6 +168,6 @@ body.fixed{
 
 @media only screen and (min-width: 520px){
     .title{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 }

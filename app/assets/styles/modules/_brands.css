@@ -32,7 +32,7 @@
     }
 
     &__img{
-        filter: grayscale(100%) brightness(114%) opacity(76%);
+        filter: grayscale(100%) brightness(124%) opacity(62%);
         transition: all .5s;
 
         &--colored{
@@ -43,8 +43,88 @@
         filter: grayscale(0%) brightness(100%) opacity(100%);
     }
 
+&__logo:nth-child(1) &__img{
+        width: 40%;
+    }
+    &__logo:nth-child(2) &__img{
+        width: 26%;
+    }
+    &__logo:nth-child(3) &__img{
+        width: 38%;
+    }
+    &__logo:nth-child(4) &__img{
+        width: 25%;
+    }
+    &__logo:nth-child(5) &__img{
+        width: 40%;
+    }
+    &__logo:nth-child(6) &__img{
+        width: 35%;
+    }
+    &__logo:nth-child(7) &__img{
+        width: 40%;
+    }
+    &__logo:nth-child(8) &__img{
+        width: 55%;
+    }
+    &__logo:nth-child(9) &__img{
+        width: 40%;
+    }
+    &__logo:nth-child(10) &__img{
+        width: 35%;
+    }
+    &__logo:nth-child(11) &__img{
+        width: 66%;
+    }
+    &__logo:nth-child(12) &__img{
+        width: 25%;
+    }
+
+      
+
+   
 }
 
+
+@media only screen and (max-width: 360px){
+    .brand.brands__logo:nth-child(1) .brand.brands__img{
+        width: 55%;
+    }
+    .brand.brands__logo:nth-child(2) .brand.brands__img{
+        width: 41%;
+    }
+    .brand.brands__logo:nth-child(3) .brand.brands__img{
+        width: 53%;
+    }
+    .brand.brands__logo:nth-child(4) .brand.brands__img{
+        width: 40%;
+    }
+    .brand.brands__logo:nth-child(5) .brand.brands__img{
+        width: 55%;
+    }
+    .brand.brands__logo:nth-child(6) .brand.brands__img{
+        width: 50%;
+    }
+    .brands__logo:nth-child(7) .brands__img{
+        width: 55%;
+    }
+    .brands__logo:nth-child(8) .brands__img{
+        width: 70%;
+    }
+    .brands__logo:nth-child(9) .brands__img{
+        width: 55%;
+    }
+    .brands__logo:nth-child(10) .brands__img{
+        width: 50%;
+    }
+    .brands__logo:nth-child(11) .brands__img{
+        width: 81%;
+    }
+    .brands__logo:nth-child(12) .brands__img{
+        width: 40%;
+    }
+}
+     
 
 @media only screen and (min-width: 540px){
     .brands__logo {
@@ -60,3 +140,9 @@
         height: 150px;
     }
 }
+
+
+
+
+
+

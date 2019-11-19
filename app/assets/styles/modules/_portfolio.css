@@ -3,10 +3,10 @@
     background: #fff;
     position: relative;
     overflow: hidden;
-    padding: 78px 0 30px 0;
+    padding: 40px 0 30px 0;
 
     &__mark-up{
-        margin: 0 auto;
+        margin: 0 5%;
     } 
 
     .owl-theme .owl-controls .owl-page {
@@ -111,5 +111,11 @@
         width: 40px;
         height: 5px;
         margin: 0 6px;
+    }
+}
+
+@media only screen and (min-width: 920px){
+    .portfolio .owl-carousel .owl-nav button.owl-prev, .portfolio .owl-carousel .owl-nav button.owl-next, .portfolio .owl-carousel .owl-dots {
+        transform: translateY(-48px);
     }
 }
