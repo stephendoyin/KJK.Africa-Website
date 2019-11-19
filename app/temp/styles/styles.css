@@ -1242,42 +1242,42 @@ body.fixed{
         width: 25%;
     }
 @media only screen and (max-width: 360px){
-    .brand.brands__logo:nth-child(1) .brand.brands__img{
-        width: 55%;
-    }
-    .brand.brands__logo:nth-child(2) .brand.brands__img{
-        width: 41%;
-    }
-    .brand.brands__logo:nth-child(3) .brand.brands__img{
-        width: 53%;
-    }
-    .brand.brands__logo:nth-child(4) .brand.brands__img{
-        width: 40%;
-    }
-    .brand.brands__logo:nth-child(5) .brand.brands__img{
-        width: 55%;
-    }
-    .brand.brands__logo:nth-child(6) .brand.brands__img{
+    .brands__logo:nth-child(1) .brands__img{
         width: 50%;
+    }
+    .brands__logo:nth-child(2) .brands__img{
+        width: 36%
+    }
+    .brands__logo:nth-child(3) .brands__img{
+        width: 48%;
+    }
+    .brands__logo:nth-child(4) .brands__img{
+        width: 35%;
+    }
+    .brands__logo:nth-child(5) .brands__img{
+        width: 50%;
+    }
+    .brands__logo:nth-child(6) .brands__img{
+        width: 45%;
     }
     .brands__logo:nth-child(7) .brands__img{
-        width: 55%;
-    }
-    .brands__logo:nth-child(8) .brands__img{
-        width: 70%;
-    }
-    .brands__logo:nth-child(9) .brands__img{
-        width: 55%;
-    }
-    .brands__logo:nth-child(10) .brands__img{
         width: 50%;
     }
+    .brands__logo:nth-child(8) .brands__img{
+        width: 65%;
+    }
+    .brands__logo:nth-child(9) .brands__img{
+        width: 50%;
+    }
+    .brands__logo:nth-child(10) .brands__img{
+        width: 45%;
+    }
     .brands__logo:nth-child(11) .brands__img{
-        width: 81%;
+        width: 76%;
     }
     .brands__logo:nth-child(12) .brands__img{
-        width: 40%;
-    }
+        width: 35%;
+    } 
 }
 @media only screen and (min-width: 540px){
     .brands__logo {
