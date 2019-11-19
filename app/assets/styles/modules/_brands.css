@@ -86,7 +86,7 @@
 }
 
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 400px){
     .brands__logo:nth-child(1) .brands__img{
         width: 50%;
     }
