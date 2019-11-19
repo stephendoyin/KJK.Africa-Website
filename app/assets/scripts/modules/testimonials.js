@@ -15,7 +15,7 @@ class Testimonials {
             dots: false,
             loop: true,
             autoplay: true,
-            autoplayTimeout: 5000
+            autoplayTimeout: 10000
 
         });
 
