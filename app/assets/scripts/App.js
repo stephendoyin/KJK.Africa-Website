@@ -6,7 +6,7 @@ import SvgAnimationCheck from "./modules/SvgAnimationCheck";
 import MobileNavigation from "./modules/MobileNav";
 import ScrollJs from "./modules/Scroll";
 import Testimonials from "./modules/testimonials";
-import SwiperJs from "./modules/Swiper";
+import SwiperSection from "./modules/Swiper";
 
 let slides = new Slides();
 let countLine = new CountLine();
@@ -16,4 +16,4 @@ let svgAnimationCheck = new SvgAnimationCheck();
 let mobileNavigation = new MobileNavigation();
 let scrollJs = new ScrollJs();
 let testimonials = new Testimonials();
-let swiper = new SwiperJs();
+let swiper = new SwiperSection();

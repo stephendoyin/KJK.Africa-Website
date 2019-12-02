@@ -8,8 +8,7 @@ class Testimonials {
     }
 
     startSlider() {
-        let owl = $(".owl-three");
-        $('.owl-three').owlCarousel({
+        let owl = $(".owl-three").owlCarousel({
             items: 1,
             nav: false,
             dots: false,
@@ -20,12 +19,12 @@ class Testimonials {
         });
 
         $('.testimonials__trigger--left').click(function () {
-            owl.trigger('prev.owl.carousel');
+            owl.trigger('prev.owl.carousel')
         })
 
 
         $('.testimonials__trigger--right').click(function () {
-            owl.trigger('next.owl.carousel');
+            owl.trigger('next.owl.carousel')
         })
     }
 

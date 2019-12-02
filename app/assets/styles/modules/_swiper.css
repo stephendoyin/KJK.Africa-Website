@@ -1,0 +1,22 @@
+.swiper-container, .swiper-container-two{
+    width: 100%;
+}
+
+.swiper-wrapper-two{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 73px;
+    left: 0;
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    width: 41px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 8px;
+}

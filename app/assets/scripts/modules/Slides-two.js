@@ -13,7 +13,7 @@ class SlidesTwo {
             dotsEach: true,
             autoplayHoverPause: true,
             loop: true,
-            autoplay: true,
+            // autoplay: true,
             autoplayTimeout: 10000,
 
         });
