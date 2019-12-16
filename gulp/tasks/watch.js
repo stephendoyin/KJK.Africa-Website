@@ -24,12 +24,38 @@ task('watch', function (cb) {
         }
     });
 
+    //restart the home page if there is any change
     watch('./app/index.html', function (cb) {
         browserSync.reload();
         cb();
     });
 
+    //restart the services page if there is any change
     watch('./app/services.html', function (cb) {
+        browserSync.reload();
+        cb();
+    });
+
+    //restart the quote page if there is any change
+    watch('./app/quote.html', function (cb) {
+        browserSync.reload();
+        cb();
+    });
+
+    //restart the about page if there is any change
+    watch('./app/about.html', function (cb) {
+        browserSync.reload();
+        cb();
+    });
+
+    //restart the contact us page if there is any change
+    watch('./app/contact.html', function (cb) {
+        browserSync.reload();
+        cb();
+    });
+
+    //restart the portfolio page if there is any change
+    watch('./app/portfolio.html', function (cb) {
         browserSync.reload();
         cb();
     });

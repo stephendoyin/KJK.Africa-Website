@@ -10,7 +10,7 @@
 
     &__quote{
         background: #FFF;
-        width: 367px;
+        width: 327px;
         box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.25);
         border-radius: 8px;
         position: absolute;
@@ -37,7 +37,7 @@
                     top: 20px;
                     left: 0;
                     cursor: text;
-                    font-size: 1rem;
+                    font-size: .9rem;
                     color: #979797;
                     transition: all .3s;
 
@@ -66,7 +66,7 @@
         }
 
         &__input-container{
-            padding: 18px 0px;
+            padding: 16px 0px;
         }
 
         &__title{
@@ -101,7 +101,8 @@
 
     &__content{
         width: 65%;
-        padding: 150px 0;
+        width: calc(95% - 367px);
+        padding: 170px 0;
         text-align: center;
         justify-content: center;
     }
@@ -119,12 +120,14 @@
         font-size: .9rem;
         margin-right: 20px;
         display: inline-flex;
+        white-space: nowrap;
         align-items: center;
     }
 
     &__lower-right{
         display: flex;
         justify-content: flex-end;
+        white-space: nowrap;
 
     }
 
@@ -170,6 +173,7 @@
             margin-left: 35px;
             margin-top: 9px;
             background: url(../../assets/images/mail.png);
+            background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
 
@@ -194,6 +198,7 @@
             transform: translateX(-50%);
             top: -78px;
             font-size: 1.4rem;
+            white-space: nowrap;
             line-height: 49px;
             color: #fff;
             font-weight: 500;
@@ -235,4 +240,136 @@
         }
     }
 
+    &__break{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 820px){
+    .footer__break{
+        display: block;
+        padding-bottom: 12px;
+    }
+    .footer__title{
+        line-height: 54px;
+        /* margin-bottom: 15px; */
+    }
+    .footer__content{
+        padding: 137px 0;
+        padding-top: 58px;
+        width: calc(100% - 300px);
+    }
+    .footer__quote{
+        top: -60px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    .footer__input-container{
+        width: 60%;
+    }
+    .footer__input-container{
+        /* width: 60%; */
+    }
+
+}
+@media only screen and (max-width: 820px){
+    .footer__input-container{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 620px){
+    .footer__input-container{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer__title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .footer__break{
+        display: none;
+    }
+
+    .footer__content {
+        padding-top: 368px;
+        padding-bottom: 95px;
+        width: 100%;
+    }
+
+    .footer__quote{
+        width: 300px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .footer__title{
+        margin-bottom: 0;
+        line-height: 20px;
+        margin-top: 30px;
+    }
+
+    .footer__input-container {
+        width: 80%;
+    }
+
+    .footer__input-container::before {
+        height: 22px;
+        width: 27px;
+        margin-left: 15px;
+    }
+
+} 
+
+@media only screen and (max-width: 370px){
+    .footer__quote {
+        width: 90%;
+        right: 5%;
+        transform: translateX(0%);
+    }
+}
+
+
+@media only screen and (max-width: 1050px){
+    .footer__lower-links{
+        flex-direction: column;
+    }
+    .footer__lower-left{
+        display: block;
+        margin-bottom: 28px;
+    }
+    .footer__lower-left .footer__link:link, .footer__link:visited{
+        /* display: block; */
+        /* width: 33%; */
+    }
+    .footer__text__lower {
+        margin-top: 3px;
+    }
+    .footer__link--resp:link, .footer__link--resp:visited{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 13px;
+    }
+
+    .footer__link:link:last-child{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .footer__lower-left .footer__link:link, .footer__link:visited {
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        display: block;
+        margin-bottom: 22px;
+    }
 }

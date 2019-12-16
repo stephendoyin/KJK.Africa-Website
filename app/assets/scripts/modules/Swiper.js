@@ -1,22 +1,27 @@
 import Swiper from 'swiper/js/swiper';
+import { isNull } from 'util';
 
 class SwiperSection {
     constructor() {
+
         this.rightArrow = document.querySelector('.testimonials__trigger--right');
         this.leftArrow = document.querySelector('.testimonials__trigger--left');
-        this.slideInit();
-        this.triggerSlider();
+        if (!(isNull(this.rightArrow))) {
+            this.slideInit();
+            this.triggerSlider();
+        }
     }
 
-    slideInit() {
 
+
+    slideInit() {
         this.mySwiper = new Swiper('.swiper-container', {
-            loop: true,
             effect: 'flip',
-            speed: 600,
             autoplay: {
                 delay: 9000,
             },
+            loop: true,
+            speed: 800,
             grabCursor: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -30,6 +35,7 @@ class SwiperSection {
 
         this.anotherSwiper = new Swiper('.swiper-container-two', {
             loop: true,
+            speed: 800,
             autoplay: {
                 delay: 9000,
                 disableOnInteraction: false,
@@ -48,6 +54,7 @@ class SwiperSection {
 
 
     triggerSlider() {
+
         this.rightArrow.addEventListener('click', () => {
             this.mySwiper.slideNext();
         });

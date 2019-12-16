@@ -1,0 +1,176 @@
+.contact{
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 60px 0;
+    }
+
+
+    &__sub-text{
+        font-weight: 300;
+        font-size: 1.2rem;
+        margin: 30px 0px 13px 0;
+        
+    }
+
+    &__left-container{
+        width: 50%;
+        padding-right: 8%;
+        height: 60vh;
+    }
+
+    &__right-container{
+        width: 50%;
+        position: relative;
+    }
+
+    &__map{
+        border-radius: 20px;
+        overflow: hidden;
+        height: 400px;
+        margin-top: 7%;
+        box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.2);
+        width: 93%;
+    }
+
+    &__bg{
+        height: 400px;
+        width: 50%;
+        background: linear-gradient(180deg, #FB5A1E -4.82%, #FA8407 100%);
+        border-radius: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    iframe {
+        border-radius: 20px;
+        height: 400px;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #333;
+
+        &:after{
+            content: "";
+            display: block;
+            width: 10%;
+            height: 3px;
+            border-radius: 10px;
+            background: #FB5A1E;
+            margin-top: 6px;
+        }
+    }
+
+    &-form{
+        padding: 30px 0;
+        position: relative;
+
+        &__inner-container{
+            padding-bottom: 32px;
+        }
+
+        &__message{
+            height: 600px;
+        }
+
+        &__submit{
+            padding: 12px 30px;
+            border-radius: 60px;
+            color: #ffffff;
+            border: none;
+            background: #FB5A1E;
+            cursor: pointer;
+            margin: 7px 0;
+    
+            &:focus{
+                outline: none;
+            }
+        }
+
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url(../../assets/images/map-opaque.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+    }
+
+    
+    &-form__input{
+        border: none;
+        width: 100%;
+        border-bottom: 1px solid #979797;
+        padding: 7px 0;
+        background: transparent;
+        resize: none;
+
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid #FB5A1E;
+        }
+    }
+
+    &-form__label{
+        display: block;
+        padding-bottom: 4px;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #FB5A1E;
+    }
+
+    &__title-text{
+        font-weight: 400;
+        font-size: 1.3rem; 
+        padding: 16px 0;
+        color: #000;
+    }
+
+    &__social{
+        display: flex;
+        margin-top: 32px;
+
+        img{
+            height: 20px;
+            margin-right: 12px;
+        }
+
+        &:link{
+            text-decoration: none;
+        }
+    }
+
+    &__text{
+        color: #333;
+    }
+    
+}
+
+@media only screen and (max-width: 740px){
+    .contact__container{
+        flex-direction: column;
+    }
+    .contact__left-container, .contact__right-container{
+        width: 100%;
+    }
+    .contact__right-container{
+        margin-top: 255px;
+    }
+    .contact__left-container {
+        padding-right: 0%;
+    }
+
+}

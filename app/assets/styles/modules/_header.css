@@ -12,6 +12,42 @@
         background-position: center;
         background-attachment: fixed;
         position: relative;
+
+        &--services{
+            height: 100vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/services-bg.png);
+        }
+
+        &--about{
+            height: 65vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/comp.jpg);
+            background-position: bottom center;
+        }
+
+        &--quote{
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/quote__bg.png);
+        }
+
+        &--contact{
+            height: 65vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/contact-bg.jpg);
+            background-position: bottom right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &--portfolio{
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/portfolio-bg.jpg);
+            background-position: top right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__text-br{
+        display: none;
     }
 
     &__break {
@@ -25,6 +61,13 @@
         font-family: 'Roboto', sans-serif;
         line-height: normal;
 
+        &--services{
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+            margin: 0;
+            font-size: 2.7rem;
+        }
+
         &--em{
             font-family: 'Playfair Display', serif;
             font-style: italic;
@@ -33,12 +76,23 @@
     }
 
     &__text{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: #ffffff;
         font-family: 'Sofia Pro', serif;
         font-weight: 200;
         line-height: 28px;
 
+        &--services{
+            text-align: center;
+        }
+
+        &__img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 192px;
+        }
        
 
         &-container{
@@ -58,10 +112,11 @@
     }
 
     &__design{
-        width: 6.7rem;
+        width: 6rem;
         vertical-align: bottom;
         transform: translateY(-1px);
     }
+
     &__development{
         width: 12.8rem;
         vertical-align: bottom;
@@ -72,27 +127,46 @@
 
 }
 
-@media only screen and (min-width: 600px){
-    .header__design{
-        width: 9.8rem;
-        transform: translateY(-1.4px);
+@media only screen and (min-width: 365px){
+    .header__break{
+        display: block;
     }
-    .header__development{
-        width: 19rem;
-        transform: translateY(-3px);
+    .header__text-br{
+        display: block;
     }
 }
 
-@media only screen and (min-width: 770px){
-    .header__map{
-        display: block;
+@media only screen and (min-width: 540px){
+    .header__container--services{
+        height: 75vh;
+    }
+    
+}
+
+@media only screen and (min-width: 600px){
+    .header__design{
+        width: 9.5rem;
+        transform: translateY(-1.4px);
+    }
+    .header__development{
+        width: 17rem;
+        transform: translateY(-3px);
+    }
+    .header__text__img {
+        width: 232px;
     }
 }
 
 
 @media only screen and (min-width: 600px){
     .header__title{
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 1020px){
+    .header__map{
+        display: block;
     }
 }
 
@@ -102,8 +176,3 @@
     }
 }
 
-@media only screen and (min-width: 365px){
-    .header__break{
-        display: block;
-    }
-}

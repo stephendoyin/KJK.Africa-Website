@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
     <!-- build:js assets/scripts/Vendor.js -->
     <script src="temp/scripts/Vendor.js"></script>
     <!-- endbuild -->
@@ -34,6 +35,7 @@
     <header class="header">
 
         <div class="header__container">
+
             <div class="nav-bar">
                 <div class="nav-bar__container row">
                     <a href="index.html" class="nav-bar__logo-link">
@@ -269,6 +271,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="header__text-container row ">
                 <h1 class="header__title ">
                     We are a
@@ -672,6 +675,7 @@
                     <img src="assets/images/play.png " class="btn__img btn__img--header " alt=" "> START A PROJECT
                 </a>
             </div>
+
         </div>
 
         <img src="assets/images/kjk-history-map.png " class="header__map ">
@@ -721,8 +725,9 @@
                             tru-DATA
                         </h2>
                         <p class="content ">
-                            tru-DATA is a user-friendly mobile and web application that is developed to Authenticate documents, progressively eliminate
-                            counterfeiting and ease document verification processes.
+                            tru-DATA is a user-friendly mobile and web application that is developed to
+                            <span class="content--thin--stronger">Authenticate documents</span>, progressively eliminate counterfeiting and ease document verification
+                            processes.
                         </p>
                         <a href="# " class="btn btn--link btn--primary btn--upper-space  btn--hover">
                             <img src="assets/images/play-slim.png " style="width:8px " class="btn__img btn__img--small" alt=" "> READ MORE
@@ -740,8 +745,9 @@
                             Afiaanyi
                         </h2>
                         <p class="content ">
-                            tru-DATA is a user-friendly mobile and web application that is developed to Authenticate documents, progressively eliminate
-                            counterfeiting and ease document verification processes.
+                            tru-DATA is a user-friendly mobile and web application that is developed to
+                            <span class="content--thin--stronger">Authenticate documents</span>, progressively eliminate counterfeiting and ease document verification
+                            processes.
                         </p>
                         <a href="# " class="btn btn--link btn--primary btn--upper-space  btn--hover">
                             <img src="assets/images/play-slim.png " style="width:8px " class="btn__img btn__img--small" alt=" "> READ MORE
@@ -759,8 +765,9 @@
                             TwoReports
                         </h2>
                         <p class="content ">
-                            tru-DATA is a user-friendly mobile and web application that is developed to Authenticate documents, progressively eliminate
-                            counterfeiting and ease document verification processes.
+                            tru-DATA is a user-friendly mobile and web application that is developed to
+                            <span class="content--thin--stronger">Authenticate documents</span>, progressively eliminate counterfeiting and ease document verification
+                            processes.
                         </p>
                         <a href="# " class="btn btn--link btn--primary btn--upper-space  btn--hover">
                             <img src="assets/images/play-slim.png " style="width:8px " class="btn__img btn__img--small" alt=" "> READ MORE
@@ -851,7 +858,7 @@
         <div>
             <div class="carouzel__container ">
                 <h2 class="title title__news ">
-                    In the News
+                    As seen in
                 </h2>
 
 
@@ -926,6 +933,7 @@
             <div class="brands__logo ">
                 <img src="assets/images/easisaver-logo-png.png " alt=" " class="brands__img ">
             </div>
+            <!--
             <div class="brands__logo ">
                 <img src="assets/images/pave.png " alt=" " class="brands__img ">
             </div>
@@ -934,32 +942,37 @@
             </div>
             <div class="brands__logo ">
                 <img src="assets/images/april-travels.png" alt=" " class="brands__img ">
-            </div>
+            </div> -->
         </div>
+
     </section>
 
-    <!-- <footer class="footer ">
+    <footer class="footer ">
 
         <div class="footer__container ">
             <div class="footer__content ">
                 <div>
 
                     <h2 class="footer__title ">
-                        Start a Project
+                        Start
+                        <br class="footer__break"> a
+                        <br class="footer__break"> Project
                     </h2>
 
-                    <p class="footer__text ">
+                    <!-- <p class="footer__text ">
                         We don’t see problems, we see
                         <span>SOLUTIONS</span>
-                    </p>
-                    <a href=" " class="btn btn--link btn--regular btn--custom ">
+                    </p> -->
+                    <br>
+                    <br>
+                    <a href=" " class="btn btn--link btn--primary btn--white btn--hover">
                         GET A QUOTE
                     </a>
 
                 </div>
 
             </div>
-            <div class="footer__quote ">
+            <form class="footer__quote ">
                 <h2 class="footer__quote__title ">Get in touch</h2>
                 <div class="footer__quote__input-container ">
                     <input type="text " id="footer-name " required class="footer__quote__input ">
@@ -978,23 +991,23 @@
                     <label class="footer__label " for="footer-company ">Company Name</label>
                 </div>
                 <div class="footer__quote__input-container ">
-                    <textarea class="footer__quote__input footer__quote__input--msg " rows="1 ">
-                    </textarea>
+                    <textarea class="footer__quote__input footer__quote__input--msg " rows="1 "></textarea>
                     <label class="footer__label " for="footer-message ">Message</label>
                 </div>
                 <div class="footer__quote__input-container ">
                     <input type="submit" class="footer__submit footer__submit--adjust" value="Submit">
                 </div>
-            </div>
+            </form>
+
             <div class="footer__lower-content ">
                 <h3 class="footer__input__title ">Subscribe to our newsletter</h3>
-                <form class="footer__input-container ">
+                <form class="footer__input-container">
                     <input class="footer__input" placeholder="Email Address" type="email" required aria-required="true">
                     <input type="submit" class="footer__submit" value="Subscribe">
                 </form>
                 <div class="footer__lower-links">
                     <div class="footer__lower-left">
-                        <a href=" " class="footer__link">
+                        <a href=" " class="footer__link footer__link--resp">
                             <img src="assets/images/kjk-black.png" alt=" " class="footer__link__logo">
                         </a>
                         <a href=" " class="footer__link ">
@@ -1013,7 +1026,7 @@
                             Contact Us
                         </a>
                     </div>
-                    <div class="footer__lower-right ">
+                    <div class="footer__lower-right">
                         <a href=" " class="footer__link ">
                             <img src="assets/images/instagram.png " style="width:20px " alt=" " class="footer__link__logo ">
                         </a>
@@ -1031,7 +1044,7 @@
             </div>
         </div>
 
-    </footer> -->
+    </footer>
 
     <!-- build:js assets/scripts/App.js -->
     <script src="temp/scripts/App.js "></script>

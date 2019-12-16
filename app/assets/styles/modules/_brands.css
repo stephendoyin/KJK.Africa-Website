@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         height: 110px;
-        margin: 8px 0;
+        margin: 14px 0;
     }
 
     &__logo:nth-child(4n+1) {
@@ -42,6 +42,10 @@
     }
     &__img:hover{
         filter: grayscale(0%) brightness(100%) opacity(100%);
+    }
+
+    &__logo:nth-child(9) {
+        display: none;
     }
 
 &__logo:nth-child(1) &__img{
@@ -134,14 +138,22 @@
     }
 }
 
+@media only screen and (min-width: 540px){
+    .brands__logo:nth-child(9) {
+        display: inherit;
+    }
+}
+
 @media only screen and (min-width: 960px){
     .brands__logo {
         width: 25%;
         position: relative;
         height: 150px;
     }
+    .brands__logo:nth-child(9) {
+        display: none;
+    }
 }
-
 
 
 

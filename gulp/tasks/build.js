@@ -26,6 +26,7 @@ gulp.task('copyGeneralFiles', function () {
         './app/**/*',
         '!./app/index.html',
         '!./app/services.html',
+        '!./app/quote.html',
         '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',

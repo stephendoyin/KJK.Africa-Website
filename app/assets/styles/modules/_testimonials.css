@@ -81,18 +81,18 @@
 
         &-text{
             padding-left: 7%;
-            font-size: 1.1rem;
-            line-height: 23px;
+            font-size: 1.4rem;
+            line-height: 31px;
             font-weight: 400;
             font-family: 'Quicksand', sans-serif;
-            color: #333;
+            color: #000;
 
             &--strong{
                 font-weight: 700
             }
 
             &--small{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
             &--adjusted{
@@ -163,7 +163,7 @@
     border-radius: 20px;
 }
 
-@media only screen and (min-width: 536px){
+@media only screen and (min-width: 700px){
     .testimonials__container-first{
         width: 36%;
     }

@@ -1,0 +1,105 @@
+.quote-form{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.16);
+    position: relative;
+    background: url(../../assets/images/map-opaque.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: 130% 80%;
+
+
+    &__img-bg{
+        position: absolute;
+        width: 76%;
+        right: -5%;
+        top: 20%;
+        z-index: -20;
+    }
+
+    &__submit{
+        padding: 12px 30px;
+        border-radius: 60px;
+        color: #ffffff;
+        border: none;
+        background: #FB5A1E;
+        cursor: pointer;
+        margin: 7px 0;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    &__header{
+        background: linear-gradient(180deg, #FA8407 23.8%, #FB5A1E 100%); 
+        padding: 32px 37px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img{
+            margin-right: 30px;
+            width: 42px;
+        }
+    }
+
+    &__inputs-container{
+        padding: 40px 60px;
+    }
+
+
+    &__input{
+        padding: 14px 0px;
+        resize: none;
+        border: none;
+        border-bottom: 1px solid #979797;
+        width: 100%;
+        background: transparent;
+        z-index: 3;
+        position: relative;
+        margin-bottom: 14px;
+
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid #FB5A1E;
+        }
+
+        &-container{
+            padding-bottom: 37px;
+        }
+    }
+
+    &__title{
+        font-size: 1.2rem;
+        color: #ffffff;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__label{
+        display: block;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: #FB5A1E;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 640px){
+    .quote-form__inputs-container {
+        padding: 40px 5%;
+    }
+
+    .quote-form{
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 1080px){
+    .quote-form__inputs-container {
+        padding: 40px 34px;
+    }
+}

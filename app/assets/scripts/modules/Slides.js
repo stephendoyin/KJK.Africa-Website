@@ -5,28 +5,9 @@ class Slides {
 
     constructor() {
         this.triggerSlider();
-        this.images = document.querySelectorAll(".brands__img");
-        this.triggercolor();
-        this.previousNumber = 0;
-        this.randNum = 0;
     }
 
-    randomizeImg() {
-        this.previousNumber = this.randNum;
-        this.randNum = Math.floor(Math.random() * 12);
-        return this.randNum;
-    }
-
-    colorRandomLogo() {
-        this.images[this.randomizeImg()].classList.add('brands__img--colored');
-        this.images[this.previousNumber].classList.remove('brands__img--colored');
-    }
-
-    triggercolor() {
-        setInterval(() => {
-            this.colorRandomLogo();
-        }, 2000)
-    }
+    
 
     triggerSlider() {
         $('.owl-one').owlCarousel({
