@@ -27,7 +27,11 @@ gulp.task('copyGeneralFiles', function () {
         '!./app/index.html',
         '!./app/services.html',
         '!./app/quote.html',
-        '!./app/assets/images/**/*',
+        '!./app/about.html',
+        '!./app/portfolio.html',
+        '!./app/work.html',
+        '!./app/contact.html',
+        // '!./app/assets/images/**/*',
         '!./app/assets/styles/**/*',
         '!./app/assets/scripts/**/*',
         '!./app/temp',
@@ -39,7 +43,7 @@ gulp.task('copyGeneralFiles', function () {
 });
 
 gulp.task('usemin', function () {
-    return gulp.src(["./app/index.html", "./app/services.html"])
+    return gulp.src(["./app/index.html", "./app/services.html", "./app/quote.html", "./app/work.html", "./app/about.html", "./app/contact.html", "./app/portfolio.html"])
         .pipe(usemin({
             css: [
                 function () {
