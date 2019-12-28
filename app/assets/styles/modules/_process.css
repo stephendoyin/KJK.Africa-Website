@@ -9,7 +9,7 @@
     &__bg{
         position: absolute;
         z-index: -1;
-        top: -95px;
+        top: -50px;
         left: 0;
         width: 100%
     }
@@ -199,7 +199,7 @@
     }
 
     .about-page-process__bg {
-        top: -57px;
+        top: -37px;
     }
     
 }

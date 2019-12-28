@@ -60,6 +60,11 @@ task('watch', function (cb) {
         cb();
     });
 
+    watch('./app/work.html', function (cb) {
+        browserSync.reload();
+        cb();
+    });
+
     watch('./app/assets/styles/**/*.css', series('styles', 'cssInject'));
 
     watch('./app/assets/scripts/**/*.js', series(series('modernizr', 'scripts'), 'scriptsRefresh'));

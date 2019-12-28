@@ -14,9 +14,13 @@
         position: relative;
 
         &--services{
-            height: 100vh;
+            height: 70vh;
             background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/services-bg.png);
         }
+
+        &--work{
+            height: 65vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        }
 
         &--about{
             height: 65vh;

@@ -1,5 +1,4 @@
-@import 'owl.carousel/dist/assets/owl.carousel.min.css';
-@import 'owl.carousel/dist/assets/owl.theme.default.min.css';
+
 @import 'swiper/css/swiper.css';
 @import 'normalize.css';
 @import 'global/_global.css';
@@ -25,3 +24,5 @@
 @import 'modules/_about-page.css';
 @import 'modules/_process.css';
 @import 'modules/_team.css';
+@import 'modules/_contact-form.css';
+@import 'modules/_work.css';

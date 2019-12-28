@@ -1,5 +1,6 @@
 .quote{
 
+    padding-bottom: 32px;
 
     &__list-img{
         position: absolute;

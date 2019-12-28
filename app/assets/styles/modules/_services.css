@@ -1,5 +1,8 @@
 .services{
     background: #FFF7F5;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 30px;
 
     &__call{
         position: relative;
@@ -31,7 +34,7 @@
         flex-wrap: wrap;
     
         & li{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             line-height: 2.6rem;
             font-weight: 300;
             position: relative;
@@ -52,7 +55,7 @@
 
     &__text{
         font-weight: 300;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         line-height: 2.3rem;
         padding-bottom: 37px;
 

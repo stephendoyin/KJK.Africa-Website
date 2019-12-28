@@ -7,7 +7,7 @@ class Slides {
         this.triggerSlider();
     }
 
-    
+
 
     triggerSlider() {
         $('.owl-one').owlCarousel({

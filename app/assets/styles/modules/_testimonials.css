@@ -81,9 +81,9 @@
 
         &-text{
             padding-left: 7%;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             line-height: 31px;
-            font-weight: 400;
+            font-weight: 300;
             font-family: 'Quicksand', sans-serif;
             color: #000;
 
@@ -136,7 +136,7 @@
     }
 
     .testimonials__img--resp {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin-right: 0px;
     }
@@ -185,7 +185,7 @@
     }
 }
 
-@media only screen and (min-width: 436px){
+@media only screen and (min-width: 500px){
     .testimonials__content{
         flex-direction: row;
         margin-top: 0%;

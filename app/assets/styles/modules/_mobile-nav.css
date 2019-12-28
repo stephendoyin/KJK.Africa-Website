@@ -54,6 +54,12 @@
         font-size: 1.2rem;
         font-weight: 400;
         margin-left: 79px;
+        display: inline-flex;
+        align-items: center;
+
+        .mobile-nav__social-img--space{
+            margin-right: 15px;
+        }
     }
 
     &--open{
@@ -112,8 +118,6 @@
 
     &__social-img{
         width: 20px;
-        vertical-align: middle;
-        margin-bottom: 2px;
     }
 
     &__list-item-link:hover{
@@ -198,6 +202,12 @@
 
     .mobile-nav{
         overflow: hidden;
+    }
+
+    .mobile-nav__links{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     .mobile-nav__list{

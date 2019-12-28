@@ -8,6 +8,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
+    padding-top: 20px;
+    overflow: hidden;
 
     &__title{
         margin-bottom: 20px;
@@ -16,7 +18,7 @@
     &__container{
         width: 100%;
         position: relative;
-        padding-top: 20px;
+        
 
         &--custom{
             padding: 120px 0px 0px 0;

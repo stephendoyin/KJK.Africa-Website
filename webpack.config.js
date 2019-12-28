@@ -10,13 +10,6 @@ module.exports = {
     path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "[name].js"
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
-  ],
   module: {
     rules: [
       {

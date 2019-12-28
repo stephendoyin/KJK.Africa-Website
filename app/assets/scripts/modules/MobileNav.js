@@ -12,6 +12,7 @@ class MobileNavigation {
         this.mobileNavResp = document.querySelectorAll(".mobile-nav--resp");
         this.mobileResp = document.querySelectorAll('.resp');
         this.navBar = document.querySelector('.nav-bar');
+        this.initialScreenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         this.triggerEvent();
         this.resize();
         this.reset();
@@ -20,7 +21,9 @@ class MobileNavigation {
 
     resize() {
         window.addEventListener("resize", () => {
-            this.reset();
+            let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            if (this.initialScreenWidth > screenWidth)
+                this.reset();
         })
     }
 
@@ -113,7 +116,9 @@ class MobileNavigation {
         if (this.nav.classList.contains('mobile-nav--open')) {
             this.navBar.classList.remove('nav-bar--down');
         } else {
-            this.navBar.classList.add('nav-bar--down');
+            if (window.pageYOffset > 55)
+                this.navBar.classList.add('nav-bar--down');
+
         }
         this.reset();
     }

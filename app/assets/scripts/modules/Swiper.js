@@ -50,6 +50,39 @@ class SwiperSection {
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        this.yetAnotherSwiper = new Swiper(".corouzel__container", {
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 9000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                600: {
+                    slidesPerView: 3,
+                },
+                1000: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 4
+                }
+            }
+        })
     }
 
 

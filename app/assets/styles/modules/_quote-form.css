@@ -8,6 +8,7 @@
     background-size: 80% auto;
     background-position: 130% 80%;
 
+    
 
     &__img-bg{
         position: absolute;
@@ -65,8 +66,17 @@
             border-bottom: 2px solid #FB5A1E;
         }
 
+        &:focus~.quote-form__label{
+            display: block;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #FB5A1E;
+            top: -8px;
+        }
+
         &-container{
-            padding-bottom: 37px;
+            padding-bottom: 47px;
+            position: relative;
         }
     }
 
@@ -79,9 +89,22 @@
 
     &__label{
         display: block;
-        font-weight: 400;
-        font-size: 1.3rem;
-        color: #FB5A1E;
+        font-weight: 300;
+        font-size: 1.1rem;
+        position: absolute;
+        top: 10px;
+        color: #979797;
+        transition: all .3s ease;
+
+        
+
+        &--keep{
+            display: block;
+            font-weight: 500;
+            font-size: 1rem;
+            color: #FB5A1E;
+            top: -8px;
+        }
     }
 
 }

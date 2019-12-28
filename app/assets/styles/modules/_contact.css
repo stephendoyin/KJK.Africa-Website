@@ -11,7 +11,7 @@
     &__sub-text{
         font-weight: 300;
         font-size: 1.2rem;
-        margin: 30px 0px 13px 0;
+        margin: 30px 0;
         
     }
 
@@ -167,7 +167,7 @@
         width: 100%;
     }
     .contact__right-container{
-        margin-top: 255px;
+        margin-top: 70px;
     }
     .contact__left-container {
         padding-right: 0%;
