@@ -1,0 +1,136 @@
+.case{
+    width: 100%;
+    position: relative;
+
+    &__color{
+        background: #fff7f5;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        width: 30%;
+        z-index: -1;
+    }
+
+    &__container{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__block{
+        width: 30%;
+        padding-left: 32px;
+        background: #FFF7F5;
+        padding-top: 100px;
+        padding-bottom: 90px;
+
+        &__title{
+            font-size: 2rem;
+            font-weight: 500;
+            padding-bottom: 16px;
+
+            &--white{
+                color: #ffffff;
+            }
+        }
+
+        &__text{
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 30px;
+            padding-bottom: 16px;
+
+            &--white{
+                color: #ffffff;
+            }
+        }
+
+        &--large{
+            width: 70%;
+            background: #ffffff;
+            padding-left: 7%;
+        }
+
+        &-item{
+            padding-bottom: 32px;
+        }
+    }
+
+    &__block__header{
+        font-weight: 600;
+        font-size: 1.5rem;
+        color: #FB5A1E;
+        padding: 0 0 8px 0;
+        position: relative;
+        cursor: pointer;
+
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-top: 6px solid transparent;
+            border-left: 12px solid #c4c4c4;
+            border-bottom: 6px solid transparent;
+            border-right: 0px;
+            left: -32px;
+            top: 30%;
+            border: 
+        }
+
+        span{
+            color: #333333;
+            font-size: 1.2rem;
+            font-weight: 300;
+            position: relative;
+            z-index: 5;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 910px){
+    .case__block{
+        background: transparent;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .case__block {
+        width: 90%;
+        margin: 0 auto;
+        background: #FFF7F5;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .case__block__resp {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .case__block-item {
+        width: 50%;
+
+    }
+    .case__color{
+        width: 100%;
+        
+    }
+    .case__block--large {
+        width: 100%;
+        padding: 8% 5% 18% 5%;
+        background: white;
+    }
+    .case__container.row{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .case__block-item { 
+        width: 100%;
+    }
+}

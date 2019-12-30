@@ -18,12 +18,18 @@
             background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/services-bg.png);
         }
 
+        &--casestudy{
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        
+        }
+
         &--work{
-            height: 65vh;
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        }
+            height: 70vh;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../../assets/images/work-bg.jpg);        
+        }
 
         &--about{
-            height: 65vh;
+            height: 70vh;
             background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../assets/images/comp.jpg);
             background-position: bottom center;
         }
@@ -34,7 +40,7 @@
         }
 
         &--contact{
-            height: 65vh;
+            height: 70vh;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.68)), url(../../assets/images/contact-bg.jpg);
             background-position: bottom right;
             background-size: cover;
@@ -180,3 +186,8 @@
     }
 }
 
+@media only screen and (max-height: 600px){
+    .header__container{
+        height: 600px;
+    }
+}

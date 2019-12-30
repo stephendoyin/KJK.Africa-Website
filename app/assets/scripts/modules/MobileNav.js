@@ -82,6 +82,7 @@ class MobileNavigation {
     }
 
     navHandler(i) {
+
         let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
         for (let x = 0; x < this.links.length; x++) {

@@ -19,11 +19,11 @@
 
 </head>
 
-<body id="services">
+<body id="quote">
 
     <header class="header">
 
-        <div class="header__container header__container--contact">
+        <div class="header__container header__container--quote">
 
             <div class="nav-bar">
                 <div class="nav-bar__container row">
@@ -31,13 +31,13 @@
                         <img src="assets/images/kjk-white.png" alt="logo" class="nav-bar__logo">
                     </a>
                     <div class="nav-bar__right-content-container">
-                        <a href="http://" class="nav-bar__link">
+                        <a href="work.html" class="nav-bar__link">
                             How we work
                         </a>
-                        <a href="http://" class="nav-bar__link">
+                        <a href="about.html" class="nav-bar__link">
                             About Us
                         </a>
-                        <a href="http://" class="nav-bar__link nav-bar__link--bg">
+                        <a href="quote.html" class="nav-bar__link nav-bar__link--bg">
                             Get a quote </a>
                         <div class="nav-bar__menu-icon">
                             <div class="nav-bar__menu-icon__line"></div>
@@ -50,11 +50,9 @@
 
                 <img src="assets/images/map-outline.svg" class="header__text__img" alt="">
                 <h1 class="header__title header__title--services">
-                    Contact Us
+                    Start your Project
                 </h1>
-                <p class="header__text header__text--services">
-                    Feel free to get in touch
-                </p>
+
 
             </div>
 
@@ -280,123 +278,90 @@
                 </div>
             </div>
 
-
-
         </div>
     </header>
 
-    <section class="contact">
 
-        <div class="contact__container row">
+    <section class="quote">
 
-            <div class="contact__left-container">
+        <div class="row quote__container">
 
-                <div class="contact__left-inner">
+            <div class="quote__left-container">
 
-                    <h2 class="contact__title">
-                        Contact us
-                    </h2>
+                <h2 class="quote__title">
+                    What will be the next step?
+                </h2>
 
-                    <p class="contact__sub-text">
-                        Lets talk, drop your message and we will contact you
-                    </p>
+                <div>
+                    <div class="quote__list-container">
+                        <img src="assets/images/bullet-pro.png" class="quote__list-img" alt="">
+                        <h3 class="quote__sub-title">
+                            <span>1.</span> We will prepare a proposal
+                        </h3>
+                        <p class="quote__text">
+                            Required scope,timeline and price will be included if you provide us with detailed information of the project
+                        </p>
+                    </div>
+                    <div class="quote__list-container">
+                        <img src="assets/images/bullet-pro.png" class="quote__list-img" alt="">
+                        <h3 class="quote__sub-title">
+                            <span>2.</span> Together we discuss
+                        </h3>
+                        <p class="quote__text">
+                            Let’s get acquainted and discuss all the possible variants and options.
+                        </p>
+                    </div>
+                    <div class="quote__list-container">
+                        <img src="assets/images/bullet-pro.png" class="quote__list-img" alt="">
+                        <h3 class="quote__sub-title">
+                            <span>3.</span> Together we discuss
+                        </h3>
+                        <p class="quote__text">
+                            When agreement is reached and all goals are set, we can now start the building.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-                    <form action="" class="contact-form">
+            <div class="quote__right-container">
+                <div>
+                    <form class="quote-form" action="">
 
-                        <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__name" class="contact-form__input">
-                            <label for="contact-form__name" class="contact-form__label">
-                                Name
-                            </label>
+                        <div class="quote-form__header">
+
+                            <img src="assets/images/envelop.png" class="quote-form__header-img" alt="">
+
+                            <h3 class="quote-form__title">
+                                Write us a few words about your project and we’ll prepare a proposal for you with 24 hours
+                            </h3>
                         </div>
-                        <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__email" class="contact-form__input">
-                            <label for="contact-form__email" class="contact-form__label">
-                                Email
-                            </label>
-                        </div>
-                        <div class="contact-form__inner-container">
-                            <textarea type="text" rows="6" id="contact-form__message" class="contact-form__input"></textarea>
-                            <label for="contact-form__name" class="contact-form__label">
-                                Message
-                            </label>
-                        </div>
 
-                        <div class="contact-form__inner-container">
-                            <input type="submit" value="Submit" class="contact-form__submit">
+                        <div class="quote-form__inputs-container">
+                            <br>
+                            <div class="quote-form__input-container">
+                                <input type="text" class="quote-form__input" required id="quote-form__name">
+                                <label class="quote-form__label" for="quote-form__name">Name</label>
+                            </div>
+                            <div class="quote-form__input-container">
+                                <input type="text" class="quote-form__input" required id="quote-form__email">
+                                <label class="quote-form__label" for="quote-form__email">E-mail</label>
+                            </div>
+                            <div class="quote-form__input-container">
+                                <input type="text" class="quote-form__input" id="quote-form__estimate">
+                                <label class="quote-form__label" for="quote-form__estimate">Estimated Budget</label>
+                            </div>
+                            <div class="quote-form__input-container">
+                                <textarea name="" required class="quote-form__input" id="quote-form__description" cols="30" rows="6"></textarea>
+                                <label class="quote-form__label" for="quote-form__description">Project Description</label>
+                            </div>
+
+                            <div>
+                                <input type="submit" class="quote-form__submit" value="Submit">
+                            </div>
                         </div>
 
                     </form>
-
                 </div>
-
-
-            </div>
-
-            <div class="contact__right-container">
-
-                <div class="contact__map">
-                    <div class="contact__map-inner" style="overflow:hidden;width: 100%;position: relative;">
-                        <iframe width="100%" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Block%2036%2C%20Apartment%2C%206%20Glover%20Estate%2C%20Adekunle%2C%20Yaba%2C%20Lagos+(Title)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <div class="contact__map-inside" style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
-                            <small style="line-height: 1.8;font-size: 2px;background: rgba(0, 0, 0, 0);">Powered by
-                                <a href="https://embedgooglemaps.com/de/">Embedgooglemaps DE</a> &
-                                <a href="https://youtubeembedcodegenerator.com/en/">
-                                    http://www.youtubeembedcodegenerator.com/
-                                </a>
-                            </small>
-                        </div>
-                        <style>
-                            #gmap_canvas img {
-                                max-width: none !important;
-                                background: none !important
-                            }
-                        </style>
-                    </div>
-                    <div class="contact__bg"></div>
-                    <br />
-                </div>
-
-                <div class="contact__animation" style="padding-top: 35px;">
-
-                    <h3 class="contact__title-text">
-                        Our Office Address
-                    </h3>
-
-                    <p class="contact__text">
-                        Block 36, Flat 6 LSPDC Estate, Glover street Yaba, Lagos
-                    </p>
-                    <br>
-                </div>
-
-                <div class="contact__animation">
-                    <h3 class="contact__title-text">
-                        Email Address
-                    </h3>
-
-                    <p class="contact__text">
-                        kjkafrica.com.ng
-                    </p>
-                </div>
-
-                <div class="contact__social contact__animation">
-                    <a href="">
-                        <img src="assets/images/facebook-gradient.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="assets/images/linkedin-gradient.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="assets/images/instagram-gradient.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="assets/images/twitter-gradient.png" alt="">
-                    </a>
-
-                </div>
-
-
             </div>
 
         </div>
@@ -499,13 +464,7 @@
 
     <script>
 
-        var slideInUp = {
-            distance: '70%',
-            origin: 'top',
-            viewFactor: .5,
-            opacity: 0,
-            duration: 1900,
-        };
+
         var slideInDown = {
             distance: '100%',
             origin: 'top',
@@ -514,19 +473,25 @@
             duration: 1200,
             delay: 200
         };
+        var slideInUp = {
+            distance: '100%',
+            origin: 'bottom',
+            viewFactor: .5,
+            opacity: 0,
+            duration: 1200,
+            delay: 200
+        };
 
-
-        ScrollReveal({ reset: true }).reveal(".contact__sub-text", slideInDown);
-        ScrollReveal({ reset: true }).reveal(".contact-form__inner-container", slideInDown);
-        ScrollReveal({ reset: true }).reveal(".contact__animation", slideInUp);
+        ScrollReveal({ reset: true }).reveal(".quote__list-container", slideInDown);
+        ScrollReveal({ reset: false }).reveal(".quote-form", slideInUp);
         ScrollReveal({ reset: true }).reveal(".footer__title", slideInDown);
-
-
 
     </script>
 
 
     <script src="assets/scripts/App-f43557f705.js"></script>
+
+
 
 </body>
 

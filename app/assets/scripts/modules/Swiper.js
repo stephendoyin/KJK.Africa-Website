@@ -35,9 +35,9 @@ class SwiperSection {
 
         this.anotherSwiper = new Swiper('.swiper-container-two', {
             loop: true,
-            speed: 800,
+            speed: 600,
             autoplay: {
-                delay: 9000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             grabCursor: true,
