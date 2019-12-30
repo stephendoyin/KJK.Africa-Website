@@ -1319,7 +1319,8 @@ body.fixed{
         font-size: 2rem;
         color: #ffffff;
         font-weight: 700;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
         line-height: normal;
     }
 
