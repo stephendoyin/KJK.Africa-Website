@@ -2,14 +2,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0px 5% 80px 5%;
-    background: linear-gradient(0deg, rgba(255, 247, 244, 0.95), rgba(255, 247, 244, 0.95)), url(../../assets/images/bg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     flex-direction: column;
     padding-top: 20px;
     overflow: hidden;
+
+    
+    &__sec{
+        background: linear-gradient(0deg, rgba(255, 247, 244, 0.95), rgba(255, 247, 244, 0.95)), url(../../assets/images/bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     &__title{
         margin-bottom: 20px;
