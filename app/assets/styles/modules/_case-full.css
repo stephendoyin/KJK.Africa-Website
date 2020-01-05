@@ -39,6 +39,9 @@
 section.br{
     transform: translateY(-80px);
     background: white;
+    height: 81px;
+    width: 100%;
+    
 }
 
 

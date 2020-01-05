@@ -16,7 +16,6 @@ class SwiperSection {
 
     slideInit() {
         this.mySwiper = new Swiper('.swiper-container', {
-            effect: 'flip',
             autoplay: {
                 delay: 9000,
             },
@@ -59,26 +58,23 @@ class SwiperSection {
                 disableOnInteraction: false,
             },
             slidesPerView: 4,
-            spaceBetween: 10,
             // Responsive breakpoints
             breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
                 // when window width is >= 320px
-                320: {
+                530: {
                     slidesPerView: 2,
                 },
                 // when window width is >= 480px
-                480: {
+                730: {
                     slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                600: {
-                    slidesPerView: 3,
-                },
-                1000: {
-                    slidesPerView: 4,
                 },
                 1200: {
+                    slidesPerView: 4,
+                },
+                1250: {
                     slidesPerView: 4
                 }
             }

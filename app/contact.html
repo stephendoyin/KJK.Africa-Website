@@ -308,19 +308,19 @@
                     <form action="" class="contact-form">
 
                         <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__name" class="contact-form__input">
+                            <input type="text" id="contact-form__name" required autocomplete="off" class="contact-form__input">
                             <label for="contact-form__name" class="contact-form__label">
                                 Name
                             </label>
                         </div>
                         <div class="contact-form__inner-container">
-                            <input type="text" id="contact-form__email" class="contact-form__input">
+                            <input type="text" id="contact-form__email" required autocomplete="off" class="contact-form__input">
                             <label for="contact-form__email" class="contact-form__label">
                                 Email
                             </label>
                         </div>
                         <div class="contact-form__inner-container">
-                            <textarea type="text" rows="6" id="contact-form__message" class="contact-form__input"></textarea>
+                            <textarea type="text" rows="6" id="contact-form__message" required autocomplete="off" class="contact-form__input"></textarea>
                             <label for="contact-form__name" class="contact-form__label">
                                 Message
                             </label>
@@ -455,7 +455,7 @@
                         </form> -->
 
             <div class="footer__lower-content ">
-                <h3 class="footer__input__title ">Subscribe to our newsletter</h3>
+
                 <form class="footer__input-container">
                     <input class="footer__input" placeholder="Email Address" type="email" required aria-required="true">
                     <input type="submit" class="footer__submit" value="Subscribe">

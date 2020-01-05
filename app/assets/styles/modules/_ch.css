@@ -1,0 +1,117 @@
+.ch{
+
+    padding-bottom: 90px;
+
+    &__bg{
+        background: url(../../assets/images/bg--tru.jpg);
+        background-size: cover;
+        background-position: bottom right;
+        text-align: center;
+
+        &-img{
+            width: 70%;
+            transform: translateY(-80px);
+        }
+    }
+
+    &__solution{
+        position: relative;
+        z-index: 5;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.06);
+        width: 1140px;
+        padding-top: 40px;
+        border-radius: 0 10px 0 0;
+        transform: translateY(-50%);
+        padding-left: 1%;
+        text-align: left;
+    }
+
+    position: relative;
+
+    &__box-left{
+        width: 50%;
+        top: -160px;
+        left: 0;
+        background: #F8F4F4;
+        height: 50%;
+        display: block;
+        position: absolute;
+    }
+
+    &__box-right{
+        width: 40%;
+        bottom: 0;
+        right: 0;
+        background: #FFF5F3;
+        height: 40%;
+        display: block;
+        position: absolute;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__item{
+        width: 52%;
+        position: relative;
+        transform: translateY(-80px);
+
+        &--space{
+            width: 48%;
+            padding-left: 5%;
+        }
+    }
+
+
+    &__img{
+        width: 100%;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.15);
+
+        &--spaced-top{
+            margin-top: 50px;
+        }
+    }
+
+    &__text__space-bottom{
+        padding-bottom: 36px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px){
+    .ch__solution{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 640px){
+
+    .ch__item{
+        width: 100%;
+        padding-left: 0%;
+    }
+    .ch__item--space{
+        padding-top: 60px;
+    }
+    .ch__box-left{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .ch__solution{
+        width: 90%;
+    }
+    .ch__bg-img{
+        width: 85%;
+    }
+    .ch__container {
+        padding-bottom: 24px;
+    }
+}

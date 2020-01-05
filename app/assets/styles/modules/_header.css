@@ -187,8 +187,8 @@
     }
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 500px){
     .header__container{
-        height: 600px;
+        height: 500px;
     }
 }

@@ -167,10 +167,16 @@
         width: 100%;
     }
     .contact__right-container{
-        margin-top: 70px;
+        margin-top: 250px;
     }
     .contact__left-container {
         padding-right: 0%;
+    }
+    .contact__map{
+        width: 100%;
+    }
+    .contact__bg{
+        visibility: hidden;
     }
 
 }

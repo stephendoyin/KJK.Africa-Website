@@ -4,7 +4,6 @@
     align-items: flex-start;
     flex-direction: column;
     padding-top: 20px;
-    overflow: hidden;
 
     
     &__sec{
@@ -12,6 +11,9 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        padding-bottom: 32px;
+        width: 100%;
+        overflow: hidden;
     }
 
     &__title{
