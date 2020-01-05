@@ -1355,12 +1355,12 @@ body.fixed{
             text-align: center;
         }
 
-.header__text__img{
+.header__text__box{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 192px;
+            width: 300px;
         }
 
 .header__text-container{
@@ -1369,6 +1369,17 @@ body.fixed{
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+.header__text-container .circle{
+                display: block;
+                height: 7px;
+                width: 7px;
+                background: #ffffff;
+                border-radius: 50%;
+                position: absolute;
+                top: -3px;
+                z-index: 2;
+            }
 
 .header__map{
         position: absolute;
@@ -4360,7 +4371,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
 .about-page__content{
         position: relative;
         text-align: justify;
-        width: 1359px;
+        width: 100%;
         margin: 0 auto;
         line-height: normal;
     }
@@ -4374,7 +4385,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         display: block;
         position: absolute;
         width: 100%;
-        height: 91%;
+        height: 64%;
         top: 24%;
         background: url(../../assets/images/map-opaque.png);
         background-size: contain;
@@ -4386,7 +4397,7 @@ App.js:39 Letter 10 is 147.7610626220703 */
         width: 15%;
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 0px;
 
     }
 
@@ -4421,9 +4432,9 @@ App.js:39 Letter 10 is 147.7610626220703 */
     }
 }
 
-@media only screen and (max-width: 1480px){
+@media only screen and (min-width: 1200px){
     .about-page__content {
-        width: 100%;
+        width: 1000px;
     }
 }
 
